@@ -29,7 +29,6 @@ class RegFragment : Fragment() {
         val email = newEmail.text.toString()
         val password = newPassword.text.toString()
         if (inputCheck(email, password)) {
-
             Toast.makeText(requireContext(), "You're signed up!", Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_regFragment_to_loginFragment)
         } else {
@@ -37,6 +36,6 @@ class RegFragment : Fragment() {
         }
     }
     private fun inputCheck(email:String, password: String): Boolean {
-        return !(TextUtils.isEmpty(email) && TextUtils.isEmpty(password))
+        return !(TextUtils.isEmpty(email) && TextUtils.isEmpty(password)
     }
 }

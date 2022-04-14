@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.PopupMenu
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
+import androidx.navigation.PopUpToBuilder
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_new_item.*
 import kotlinx.android.synthetic.main.fragment_new_item.view.*
