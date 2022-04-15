@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_nav"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.academynotesapp.ListFragment"
-        android:label="fragment_list"
+        android:label="List"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_newItemFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/newItemFragment"
         android:name="com.example.academynotesapp.NewItemFragment"
-        android:label="fragment_new_item"
+        android:label="Add a new person"
         tools:layout="@layout/fragment_new_item" >
         <action
             android:id="@+id/action_newItemFragment_to_listFragment"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.academynotesapp.LoginFragment"
-        android:label="fragment_login"
+        android:label="Login to continue"
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_loginFragment_to_regFragment"
@@ -38,7 +38,7 @@
     <fragment
         android:id="@+id/regFragment"
         android:name="com.example.academynotesapp.RegFragment"
-        android:label="fragment_reg"
+        android:label="Registration"
         tools:layout="@layout/fragment_reg" >
         <action
             android:id="@+id/action_regFragment_to_loginFragment"
