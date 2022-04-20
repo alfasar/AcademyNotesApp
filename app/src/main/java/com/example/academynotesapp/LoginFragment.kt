@@ -42,6 +42,6 @@ class LoginFragment : Fragment() {
         }
     }
     private fun inputCheck(email:String, password:String):Boolean {
-        return!(TextUtils.isEmpty(email) && TextUtils.isEmpty(password))
+        return!(TextUtils.isEmpty(email) || TextUtils.isEmpty(password))
     }
 }

@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_reg.*
 import kotlinx.android.synthetic.main.fragment_reg.view.*
 
@@ -31,12 +31,12 @@ class RegFragment : Fragment() {
         if (inputCheck(email, password)) {
 
             Toast.makeText(requireContext(), "You're signed up!", Toast.LENGTH_LONG).show()
-            findNavController().navigate(R.id.action_regFragment_to_loginFragment)
+            Navigation.findNavController(requireView()).navigateUp()
         } else {
             Toast.makeText(requireContext(), "Fill out blank fields", Toast.LENGTH_LONG).show()
         }
     }
     private fun inputCheck(email:String, password: String): Boolean {
-        return !(TextUtils.isEmpty(email) && TextUtils.isEmpty(password))
+        return !(TextUtils.isEmpty(email) || TextUtils.isEmpty(password))
     }
 }
