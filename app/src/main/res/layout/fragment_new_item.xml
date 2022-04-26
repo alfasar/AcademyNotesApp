@@ -44,6 +44,12 @@
             android:text="@string/add_btn"
             android:textSize="17sp" />
 
+        <Button
+            android:id="@+id/testtt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
     </LinearLayout>
 
 </FrameLayout>
