@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">AcademyNotesApp</string>
+    <string name="app_name">Birthday Notes</string>
+    <string name="email_name">E-mail</string>
+    <string name="pass_name">Password</string>
+    <string name="log_btn_name">Log In</string>
+    <string name="reg_btn_name">Registration</string>
+    <string name="sign_btn_name">Sign Up</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_date">Select date</string>
+    <string name="floating_btn_desc">Add a new item</string>
+    <string name="add_btn">Add</string>
 </resources>
